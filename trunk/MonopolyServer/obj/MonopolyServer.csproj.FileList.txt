@@ -1,5 +1,0 @@
-obj\Debug\ResolveAssemblyReference.cache
-bin\Debug\MonopolyServer.exe
-bin\Debug\MonopolyServer.pdb
-obj\Debug\MonopolyServer.exe
-obj\Debug\MonopolyServer.pdb
