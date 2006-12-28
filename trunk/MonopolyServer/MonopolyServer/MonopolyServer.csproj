@@ -33,6 +33,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="GameServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
