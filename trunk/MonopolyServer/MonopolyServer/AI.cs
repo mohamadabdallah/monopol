@@ -19,7 +19,7 @@ namespace Monopoly
         public Player[] Players;
         public Socket MySocket;
         
-        public abstract int Bid(Property aProp, int aCurrentBid);
+        public abstract int Bid(Property aProp, int aCurrentBid, int aAuctionTime);
         public abstract bool TenPercentOr200Dollars();
         public abstract bool BuyVisitedProperty(Property aProp);
         public abstract bool BuyOfferedProperty(Player aPlayer, Property aProp, int aPrice);
@@ -103,7 +103,7 @@ namespace Monopoly
             return myMaxPrice;
         }
 
-        public override int Bid(Property aProp, int aCurrentBid)
+        public override int Bid(Property aProp, int aCurrentBid, int aAuctionTime)
         {
             int myMaxBid = CalculatePropertyMaxPrice(aProp);
 
@@ -127,8 +127,6 @@ namespace Monopoly
                 PayDebt();
             else
             {
-
-
                 int res = CalculateReserve();
 
                 //Odkupujemy zastawione domy
@@ -181,6 +179,8 @@ namespace Monopoly
         {
             return true;
         }
+
+
 
         void PayDebt()
         {
@@ -381,9 +381,25 @@ namespace Monopoly
                         SendMessage("buyVisitedProperty", "buy", dec.ToString().ToLower());
                             
                         break;
+
+                    case "propertyOffer":
+                        dec = mController.BuyOfferedProperty(FindPlayer(e.GetAttribute("player")),
+                            (Property)mController.GameBoard.Fields[int.Parse(e.GetAttribute("propertyId"))],
+                            int.Parse(e.GetAttribute("offer")));
+                        SendMessage("propertyOffer", dec.ToString().ToLower());
+                        break;
                 }
             }
 
+        }
+
+        Player FindPlayer(string aName)
+        {
+            foreach (Player pi in Players)
+                if (pi.Nickname == aName)
+                    return pi;
+
+            return null;
         }
 
     }
