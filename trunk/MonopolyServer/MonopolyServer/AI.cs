@@ -26,7 +26,7 @@ namespace Monopoly
         public abstract bool UseGetOutOfJaiFreeCard();
         public abstract void FreeMove(int aDebt);
         public abstract bool GetOutOfJailFreeCardOffered(Player aPlayer, int aPrice);
-        public abstract bool DrawChanceOrPay10Dollars();
+        public abstract bool PayOrDrawCard();
 
         protected void Mortgage(Property aProp)
         {
@@ -141,6 +141,8 @@ namespace Monopoly
                     {
                         City c = (City)p;
                         int num = (MyPlayer.Money - res) / c.PricePerHouse;
+                        if (c.NumHouses + num > 5)
+                            num = 5 - c.NumHouses;
                         if (num > 0)
                             BuyHouses(c, num);
                     }
@@ -161,12 +163,12 @@ namespace Monopoly
         public override bool GetOutOfJailFreeCardOffered(Player aPlayer, int aPrice)
         {
             int res = CalculateReserve();
-            return MyPlayer.Money - res - aPrice > 0 && aPrice < 50 + new Random().Next(0, 200);                
+            return MyPlayer.Money - res - aPrice > 0 && aPrice < 50 + new Random().Next(0, 150);                
         }
 
-        public override bool DrawChanceOrPay10Dollars()
+        public override bool PayOrDrawCard()
         {
-            return true;
+            return false;
         }
 
         public override bool BuyOfferedProperty(Player aPlayer, Property aProp, int aPrice)
@@ -388,6 +390,18 @@ namespace Monopoly
                             int.Parse(e.GetAttribute("offer")));
                         SendMessage("propertyOffer", dec.ToString().ToLower());
                         break;
+
+                    case "payOrDrawCard":
+                        dec = mController.PayOrDrawCard();
+                        SendMessage("payOrDrawCard", "decision", dec.ToString().ToLower());
+                        break;
+
+                    case "getOutOfJailFreeCardOffer":
+                        dec = mController.GetOutOfJailFreeCardOffered(FindPlayer(e.GetAttribute("player")),
+                            int.Parse(e.GetAttribute("offer")));
+                        SendMessage("propertyOffer", dec.ToString().ToLower());
+                        break;
+
                 }
             }
 
