@@ -402,6 +402,10 @@ namespace Monopoly
                         SendMessage("propertyOffer", dec.ToString().ToLower());
                         break;
 
+                    case "areYouReady":
+                        SendMessage("ready");
+                        break;
+
                 }
             }
 
