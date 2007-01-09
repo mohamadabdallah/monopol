@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface", "UserInterface\UserInterface.csproj", "{7447D85A-D75B-456D-A28A-DCC86260EFEC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyServer", "MonopolyServer\MonopolyServer\MonopolyServer.csproj", "{6B35097C-FDEF-4A68-85D0-0CCD9735173D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyClient", "MonopolyClient\MonopolyClient.csproj", "{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7447D85A-D75B-456D-A28A-DCC86260EFEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7447D85A-D75B-456D-A28A-DCC86260EFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7447D85A-D75B-456D-A28A-DCC86260EFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7447D85A-D75B-456D-A28A-DCC86260EFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
