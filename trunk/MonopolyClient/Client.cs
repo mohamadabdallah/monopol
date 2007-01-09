@@ -19,7 +19,8 @@ namespace MonopolyClient
         public Client(IPAddress IPAdress, int aPort, string aNick)
         {
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            socket.Connect(IPAdress, aPort); 
+            socket.Connect(IPAdress, aPort);
+            
         }
 
         #endregion
