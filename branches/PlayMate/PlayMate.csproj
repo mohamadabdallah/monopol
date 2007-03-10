@@ -1,0 +1,126 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43ACB5C8-D741-4343-A008-BC59F6D7AC1E}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>PlayMate</RootNamespace>
+    <AssemblyName>PlayMate</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>library</OutputType>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
+    <!-- Most people will use Publish dialog in Visual Studio to increment this -->
+    <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="PresentationDesignDeveloper, Version=0.0.4030.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Microsoft Visual Studio 8\Common7\IDE\Cider\PresentationDesignDeveloper.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.IdentityModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Fields\Field.xaml" />
+    <Page Include="Fields\Chance.xaml" />
+    <Page Include="Fields\ComunityChest.xaml" />
+    <Page Include="Fields\FreeParking.xaml" />
+    <Page Include="Fields\GoToJail.xaml" />
+    <Page Include="Fields\Jail.xaml" />
+    <Page Include="Fields\ShowField.xaml" />
+    <Page Include="Fields\Start.xaml" />
+    <Page Include="Mate.xaml" />
+    <Compile Include="Mate.xaml.cs">
+      <DependentUpon>Mate.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fields\Field.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Field.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\Chance.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Chance.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\ComunityChest.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ComunityChest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\FreeParking.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>FreeParking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\GoToJail.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>GoToJail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\Jail.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Jail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\ShowField.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ShowField.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fields\Start.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Start.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fields\Skins\Default\chance.jpg" />
+    <Resource Include="Fields\Skins\Default\comunitychest.jpg" />
+    <Resource Include="Fields\Skins\Default\freeparking.jpg" />
+    <Resource Include="Fields\Skins\Default\go.jpg" />
+    <Resource Include="Fields\Skins\Default\gotojail.jpg" />
+    <Resource Include="Fields\Skins\Default\jail.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.WinFX.targets" />
+</Project>
