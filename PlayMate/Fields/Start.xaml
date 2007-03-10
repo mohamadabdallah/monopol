@@ -1,0 +1,8 @@
+<UserControl x:Class="PlayMate.Fields.Start"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 Width="90" Height="90">
+    <Grid>
+		<Image Name="Image" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></Image>
+    </Grid>
+</UserControl>

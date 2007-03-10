@@ -1,0 +1,13 @@
+<UserControl x:Class="PlayMate.Fields.Field"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 Width="60" Height="90">
+    <Grid>
+		<StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+			<Rectangle Name="_Header" Width="60" Height="15"></Rectangle>
+			<Label Name="_CityName" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center">Nazwa Miasta</Label>
+			<Image Name="_Image" Width="60" Height="40"></Image>
+			<Label Name="_Price" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center">Cena</Label>
+			  </StackPanel>   
+    </Grid>
+</UserControl>
