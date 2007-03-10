@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyServer", "MonopolyServer\MonopolyServer\MonopolyServer.csproj", "{6B35097C-FDEF-4A68-85D0-0CCD9735173D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonopolyClient", "MonopolyClient\MonopolyClient.csproj", "{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monopoly", "Monopoly\Monopoly.csproj", "{0D459422-08A6-4F18-A719-75F89FE756D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayMate", "PlayMate\PlayMate.csproj", "{43ACB5C8-D741-4343-A008-BC59F6D7AC1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User", "User\User.csproj", "{861F8952-CC5B-4928-8538-95F52869C1B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B35097C-FDEF-4A68-85D0-0CCD9735173D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4381F11-CF08-4AE6-905E-4FEC8FC6553E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D459422-08A6-4F18-A719-75F89FE756D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D459422-08A6-4F18-A719-75F89FE756D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D459422-08A6-4F18-A719-75F89FE756D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D459422-08A6-4F18-A719-75F89FE756D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43ACB5C8-D741-4343-A008-BC59F6D7AC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43ACB5C8-D741-4343-A008-BC59F6D7AC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43ACB5C8-D741-4343-A008-BC59F6D7AC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43ACB5C8-D741-4343-A008-BC59F6D7AC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{861F8952-CC5B-4928-8538-95F52869C1B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861F8952-CC5B-4928-8538-95F52869C1B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861F8952-CC5B-4928-8538-95F52869C1B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861F8952-CC5B-4928-8538-95F52869C1B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = 
+	EndGlobalSection
+EndGlobal
