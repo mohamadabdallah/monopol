@@ -183,6 +183,5 @@ namespace MonopolyServer
 
             return null;
         }
-
     }
 }
