@@ -8,7 +8,7 @@ using System.Net.Sockets;
 
 namespace MonopolyServer.AI
 {
-    class AIPlayerController : PlayerController
+    public class AIPlayerController : PlayerController
     {
         public AIPlayerController(Socket aSocket)
         {

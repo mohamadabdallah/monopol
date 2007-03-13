@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.Net;
 using System.Net.Sockets;
-using Monopoly;
+using MonopolyServer.GameServer;
+using MonopolyServer.AI;
 
 namespace MonopolyClient
 {
@@ -12,8 +13,11 @@ namespace MonopolyClient
         #region Private Variables
 
         Socket socket;
+        MessageQueue messageQueue;
+        AIPlayerController aiPlayerController;
 
         #endregion
+
         #region Public Constructors
 
         public Client(IPAddress IPAdress, int aPort, string aNick)

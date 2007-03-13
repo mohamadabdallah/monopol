@@ -6,7 +6,7 @@ using System.Net.Sockets;
 
 namespace MonopolyServer.GameServer
 {
-    class MessageQueue
+    public class MessageQueue
     {
 
         public MessageQueue(Socket aSocket)
