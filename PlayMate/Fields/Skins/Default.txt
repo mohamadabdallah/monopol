@@ -1,0 +1,43 @@
+Name:Default
+-start-
+Start:Start:./Skins/Default/go.jpg
+f:1:Blue:Warszawa:100:./Skins/Default/Warszawa.png
+ComunityChest:./Skins/Default/comunitychest.jpg
+f:3:Blue:P³ock:./Skins/Default/Plock.png
+f:4:IncomeTax:./Skins/Default/chance.jpg
+f:5:RailRoad:./Skins/Default/chance.jpg
+f:6:LightBlue:£ódŸ:./Skins/Default/Lodz.png
+Chance:./Skins/Default/chance.jpg
+f:8:LightBlue:Pabianice:./Skins/Default/Pabianice.png
+f:9:LightBlue:Opoczno:./Skins/Default/Opoczno.png
+Jail:Jail:./Skins/Default/jail.jpg
+f:10:Purple:Gdañsk:./Skins/Default/Gdansk.png
+f:11:Electric Company:./Skins/Default/chance.jpg
+f:12:Purple:Gdynia:./Skins/Default/Gdynia.png
+f:13:Purple:S³upsk:./Skins/Default/Slupsk.png
+f:14:RailRoad:./Skins/Default/chance.jpg
+f:15:Orange:Wroc³aw:./Skins/Default/Wroclaw.png
+ComunityChest:./Skins/Default/comunitychest.jpg
+f:17:Orange:Wa³brzych:./Skins/Default/Walbrzych.png
+f:18:Orange:Legnica:./Skins/Default/Legnica.png
+FreeParking:FreeParking:./Skins/Default/.png
+f:19:Red:Poznañ:./Skins/Default/Poznan.png
+Chance:./Skins/Default/chance.jpg
+f:21:Red:Kalisz:./Skins/Default/Kalisz.png
+f:22:Red:Ostrów Wielkopolski:./Skins/Default/OstrowWielkopolski.png
+f:23:RailRoad:./Skins/Default/chance.jpg
+f:24:Yellow:Opole:./Skins/Default/Opole.png
+f:25:Yellow:Nysa:./Skins/Default/Nysa.png
+f:26:WaterWorks:./Skins/Default/chance.jpg
+f:27:Yellow:Kêdzierzyn KoŸle:./Skins/Default/KedzierzynKozle.png
+GoToJail:GoToJail:./Skins/Default/gotojail.jpg
+f:28:Green:Kraków:./Skins/Default/Krakow.png
+f:29:Green:Brzesko:./Skins/Default/Brzesko.png
+ComunityChest:./Skins/Default/comunitychest.jpg
+f:31:Green:Zakopane:./Skins/Default/Zakopane.png
+f:32:RailRoad:./Skins/Default/chance.jpg
+Chance:./Skins/Default/chance.jpg
+f:34:MediumBlue:Rzeszów:./Skins/Default/Rzeszow.png
+f:35:LuxuryTax:./Skins/Default/chance.jpg
+f:36:MediumBlue:Przemyœl:./Skins/Default/Przemysl.png
+-end-
