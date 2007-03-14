@@ -17,12 +17,14 @@ namespace PlayMate.Fields
     /// Interaction logic for Field.xaml
     /// </summary>
 
-    public partial class Field : System.Windows.Controls.UserControl
+    public partial class Field : System.Windows.Controls.UserControl, FieldInterface
     {
         private string _name;
         private double _price;
         private Image _image;
         private Brush _headerColor;
+        private bool _isFree;
+        private bool _readyToBuy;
 
         #region Accessors
 
@@ -62,6 +64,28 @@ namespace PlayMate.Fields
             set { this._headerColor = value; }
         }
 
+        /// <summary>
+        /// Czy wolne
+        /// </summary>
+        public bool IsFree
+        {
+            get { return this._isFree; }
+            set { this._isFree = value; }
+        }
+
+        /// <summary>
+        /// Gotowy w tej chwili do kupna
+        /// </summary>
+        public bool ReadyToBuy
+        {
+            set { this._readyToBuy = value; }
+        }
+
+        public Pawn Pawn
+        {
+            set { PlaceForPawn.Children.Add(value); }
+        }
+
         #endregion
 
         /// <summary>
@@ -78,7 +102,10 @@ namespace PlayMate.Fields
             Price = _Price;
             Image = _Image;
             HeaderColor = _HeaderColor;
+            IsFree = true;
+            _readyToBuy = false;
             Load();
+           
         }
 
         /// <summary>
@@ -86,7 +113,15 @@ namespace PlayMate.Fields
         /// </summary>
         public void Show()
         {
-            new ShowField(HeaderColor,CityName,Image,Price.ToString());
+            ShowField hh = new ShowField(HeaderColor,CityName,Image,Price.ToString());
+            if (_readyToBuy == true)
+            {
+                hh.ShowDialogButtons();
+            }
+            hh.ShowDialog();
+
+            if (hh.DialogResult == true)
+                _isFree = false;
         }
 
         /// <summary>
@@ -100,7 +135,7 @@ namespace PlayMate.Fields
         {
             CityName = _Name;
             Price = _Price;
-            Image = _Image;
+            Image.Source = _Image.Source;
             HeaderColor = _HeaderColor;
             Load();
         }
@@ -112,8 +147,23 @@ namespace PlayMate.Fields
         {
             _CityName.Content = CityName;
             _Header.Fill = HeaderColor;
-            _Price.Content = Price;
-            _Image = Image;
+            _Price.Content = Price.ToString();
+            _Image.Source = Image.Source;
+        }
+
+        public void ClearPawn(Pawn pawn)
+        {
+            PlaceForPawn.Children.Remove(pawn);
+        }
+
+        public bool PawnExists(Pawn pawn)
+        {
+            foreach (UIElement pp in PlaceForPawn.Children)
+            {
+                if ((pp as Pawn).Name == pawn.Name)
+                    return true;
+            }
+            return false;
         }
     }
 }
