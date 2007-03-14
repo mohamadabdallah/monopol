@@ -6,7 +6,7 @@ using System.Windows.Media;
 
 namespace PlayMate.Fields
 {
-    public interface FieldInterface
+    public interface FieldInterface 
     {
         /// <summary>
         /// Nazwa miasta
