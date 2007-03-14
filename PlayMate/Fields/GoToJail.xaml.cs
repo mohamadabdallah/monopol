@@ -17,12 +17,88 @@ namespace PlayMate.Fields
     /// Interaction logic for GoToJail.xaml
     /// </summary>
 
-    public partial class GoToJail : System.Windows.Controls.UserControl
+    public partial class GoToJail : System.Windows.Controls.UserControl, FieldInterface
     {
-        public GoToJail()
+        private string _name;
+        private double _price;
+        private Image _image;
+        private Brush _headerColor;
+
+        #region Accessors
+
+        /// <summary>
+        /// Nazwa miasta
+        /// </summary>
+        public string CityName
         {
-            InitializeComponent();
+            get { return this._name; }
+            set { this._name = value; }
         }
 
+        /// <summary>
+        /// Cena miasta
+        /// </summary>
+        public double Price
+        {
+            get { return this._price; }
+            set { this._price = value; }
+        }
+
+        /// <summary>
+        /// Zdjecie miasta
+        /// </summary>
+        public Image Image
+        {
+            get { return this._image; }
+            set { this._image = value; }
+        }
+
+        /// <summary>
+        /// Kolor nag³ówka
+        /// </summary>
+        public Brush HeaderColor
+        {
+            get { return this._headerColor; }
+            set { this._headerColor = value; }
+        }
+
+        public Pawn Pawn
+        {
+            set { PlaceForPawn.Children.Add(value); }
+        }
+        #endregion
+
+
+        public GoToJail(Image image)
+        {
+            _image = new Image();
+            InitializeComponent();
+            _image.Source = image.Source;
+            ImageBorder.Child = _image;
+        }
+
+        /// <summary>
+        /// Pokazanie okna 
+        /// </summary>
+        public void Show()
+        {
+            ShowField hh = new ShowField(Brushes.White, "", _image, "");
+            hh.ShowDialog();
+        }
+
+        public void ClearPawn(Pawn pawn)
+        {
+            PlaceForPawn.Children.Remove(pawn);
+        }
+
+        public bool PawnExists(Pawn pawn)
+        {
+            foreach (UIElement pp in PlaceForPawn.Children)
+            {
+                if ((pp as Pawn).Name == pawn.Name)
+                    return true;
+            }
+            return false;
+        }
     }
 }
