@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Monopoly.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="Monopoly" Height="760" Width="1000" ToolTip="Gra Monopoly wersja 1.0" WindowStartupLocation="CenterScreen" VerticalContentAlignment="Stretch" ResizeMode="NoResize">
+    Title="Monopoly" Height="760" Width="1000" ToolTip="Gra Monopoly wersja 1.0" WindowStartupLocation="CenterScreen" VerticalContentAlignment="Stretch" ResizeMode="NoResize" WindowState="Maximized">
   <Grid>
     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
       <DockPanel Name="_menuPanel" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
@@ -243,6 +243,8 @@
               </EventTrigger>
             </Button.Triggers>
           </Button>
+			<Button Name="Run" Click="Run_Clicked">Pokaz</Button>
+          <Button Name="Buy" Click="Buy_Clicked">Kup</Button>
         </StackPanel>
       </StackPanel>
 
