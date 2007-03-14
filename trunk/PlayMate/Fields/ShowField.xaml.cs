@@ -24,12 +24,33 @@ namespace PlayMate.Fields
         {
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             this.WindowStyle = WindowStyle.ToolWindow;
-            this.Header.Fill = _Header;
-            this.Image = _Image;
-            this.City.Content = _City;
-            this.Price.Content = _Price;
+          
             InitializeComponent();
+            Header.Fill = _Header ;
+            Image.Source = _Image.Source;
+            City.Content = _City;
+            Price.Content = _Price;
+            button1.Visibility = Visibility.Hidden;
+            button2.Visibility = Visibility.Hidden;
         }
 
+        /// <summary>
+        /// Pokazanie przycisków do dialogu
+        /// </summary>
+        public void ShowDialogButtons()
+        {
+            button1.Visibility = Visibility.Visible;
+            button2.Visibility = Visibility.Visible;
+        }
+
+        private void Ok_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = true;
+        }
+
+        private void Cancel_Clicked(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+        }
     }
 }
