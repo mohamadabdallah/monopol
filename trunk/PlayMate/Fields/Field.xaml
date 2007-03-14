@@ -3,11 +3,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 Width="60" Height="90">
     <Grid>
-		<StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-			<Rectangle Name="_Header" Width="60" Height="15"></Rectangle>
-			<Label Name="_CityName" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center">Nazwa Miasta</Label>
-			<Image Name="_Image" Width="60" Height="40"></Image>
+		<StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Name="MainStack">
+			<Rectangle Name="_Header" Width="60" Height="5"></Rectangle>
+      <Label Name="_CityName" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center" >Nazwa Miasta</Label>
+			<Image Name="_Image" Width="60" Height="40" MaxHeight="40" MaxWidth="60"></Image>
 			<Label Name="_Price" FontSize="8" VerticalAlignment="Center" HorizontalAlignment="Center">Cena</Label>
-			  </StackPanel>   
+			  </StackPanel>
+		<WrapPanel Name="PlaceForPawn" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></WrapPanel>
     </Grid>
 </UserControl>
