@@ -3,6 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 Width="90" Height="90">
     <Grid>
-		<Image Name="Image" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></Image>
+      <Border Name="ImageBorder" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></Border>
+		<WrapPanel Name="PlaceForPawn" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></WrapPanel>
     </Grid>
 </UserControl>
