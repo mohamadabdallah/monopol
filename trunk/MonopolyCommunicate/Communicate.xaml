@@ -1,0 +1,9 @@
+﻿<Window x:Class="MonopolyCommunicate.Communicate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MonopolyCommunicate" Height="300" Width="300"
+    >
+    <Grid>
+    <RichTextBox HorizontalAlignment="Center" Name="richTextBox1" VerticalAlignment="Center" />
+  </Grid>
+</Window>

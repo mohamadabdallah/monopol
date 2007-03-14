@@ -1,0 +1,18 @@
+.\bin\Debug\MonopolyCommunicate.dll
+C:\Users\Onej\Desktop\Monopoly\MonopolyCommunicate\obj\Debug\Communicate.baml
+C:\Users\Onej\Desktop\Monopoly\MonopolyCommunicate\obj\Debug\Communicate.g.cs
+C:\Users\Onej\Desktop\Monopoly\MonopolyCommunicate\obj\Debug\MonopolyCommunicate_MarkupCompile.cache
+.\bin\Debug\MonopolyCommunicate.pdb
+.\bin\Debug\PresentationDesignDeveloper.DLL
+.\bin\Debug\PresentationDesignFramework.dll
+.\bin\Debug\PresentationDesignCore.dll
+.\bin\Debug\Draft.PresentationDesignMarkup.dll
+obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Lukasz.Machowski\Pulpit\Monopoly\MonopolyCommunicate\obj\Debug\Communicate.baml
+C:\Documents and Settings\Lukasz.Machowski\Pulpit\Monopoly\MonopolyCommunicate\obj\Debug\Communicate.g.cs
+C:\Documents and Settings\Lukasz.Machowski\Pulpit\Monopoly\MonopolyCommunicate\obj\Debug\MonopolyCommunicate_MarkupCompile.cache
+obj\Debug\MonopolyCommunicate.g.resources
+obj\Debug\MonopolyCommunicate.Properties.Resources.resources
+obj\Debug\MonopolyCommunicate.csproj.GenerateResource.Cache
+obj\Debug\MonopolyCommunicate.dll
+obj\Debug\MonopolyCommunicate.pdb
