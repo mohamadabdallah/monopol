@@ -139,12 +139,12 @@ namespace MonopolyClient
             return null;
         } 
 
-        public void Run()
+        public void Update()
         {
 
             //tutaj musisz wyrzucic fora//
-           for(;;)
-           {
+           ///for(;;)
+           //{
 
                XmlElement e = GetNextMessage();
 
@@ -738,7 +738,7 @@ namespace MonopolyClient
 
                #endregion
 
-           }
+          // }
         }
 
         //musisz sobie zrobic message box z zapytanie czy jest gotowy
